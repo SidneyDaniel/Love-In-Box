@@ -1,0 +1,212 @@
+
+input[type=radio]{
+    display: none;
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    user-select: none;
+}
+
+.card{
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    /* max-width: 600px;
+    max-height: 600px; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    transform-style: preserve-3d;
+    margin-top: 3rem;
+   
+}
+
+.setasNav{
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    gap: 30vw;
+    font-size: 60px;
+    cursor: pointer;
+}
+
+
+.setasNav button{
+    border-radius: 9rem;
+    background-color: transparent;
+    border: none;
+    transition: 0.10s ease;
+}
+
+.setasNav button:hover{
+    scale: 1.09;
+}  
+
+
+.setasNav button .material-symbols-outlined{
+    font-size: 35px;
+    border-radius: 10rem;
+    cursor: pointer;
+    font-weight: 900;
+    user-select: none;
+}
+
+.cards{
+    position: relative;
+    width: 45vw;
+    height: 80vh;
+    margin-bottom: 20px;
+}
+
+.cards label{
+    position: absolute;
+    pointer-events: none;
+}
+
+
+.cards label .descricao{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    padding: 2rem;
+    color: #000000;
+    text-shadow: 2px 2px #fff;
+    bottom: 30%;
+    font-family: var(--robotoFlex);
+}
+
+
+.cards label .descricao a, 
+.material-symbols-outlined.setaTexto{
+    pointer-events: all;
+    color: #000000;
+    font-size: 2vw;
+    transition: 0.1s ease-in-out;
+    display: flex;
+}
+
+.cards label .descricao a:hover{
+    text-transform: lowercase;
+}
+
+
+.cards label .descricao a:hover .material-symbols-outlined.setaTexto{
+    transform: translateX(8px);
+}
+
+
+
+#item-1:checked ~ .cards #quadro-4,
+#item-2:checked ~ .cards #quadro-5,
+#item-3:checked ~ .cards #quadro-6,
+#item-4:checked ~ .cards #quadro-7,
+#item-5:checked ~ .cards #quadro-8,
+#item-6:checked ~ .cards #quadro-1,
+#item-7:checked ~ .cards #quadro-2,
+#item-8:checked ~ .cards #quadro-3{
+    transform: translatex(-80%) scale(0.8);
+    opacity: 0.4;
+    z-index: 0;
+    
+}
+
+#item-1:checked ~ .cards #quadro-5,
+#item-2:checked ~ .cards #quadro-6,
+#item-3:checked ~ .cards #quadro-7,
+#item-4:checked ~ .cards #quadro-8,
+#item-5:checked ~ .cards #quadro-1,
+#item-6:checked ~ .cards #quadro-2,
+#item-7:checked ~ .cards #quadro-3,
+#item-8:checked ~ .cards #quadro-4{
+    transform: translatex(80%) scale(0.8);
+    opacity: 0.4;
+    z-index: 0;
+
+}
+/* -------------------------------------------------------------- */
+
+
+#item-1:checked ~ .cards #quadro-1,
+#item-2:checked ~ .cards #quadro-2,
+#item-3:checked ~ .cards #quadro-3,
+#item-4:checked ~ .cards #quadro-4,
+#item-5:checked ~ .cards #quadro-5,
+#item-6:checked ~ .cards #quadro-6,
+#item-7:checked ~ .cards #quadro-7,
+#item-8:checked ~ .cards #quadro-8{
+    transform: translatex(0) scale(1);
+    opacity: 1;
+    z-index: 2;
+
+}
+
+/* ----------------------------------------------------------- */
+
+#item-1:checked ~ .cards #quadro-4,
+#item-2:checked ~ .cards #quadro-5,
+#item-3:checked ~ .cards #quadro-6,
+#item-4:checked ~ .cards #quadro-7,
+#item-5:checked ~ .cards #quadro-8,
+#item-6:checked ~ .cards #quadro-1,
+#item-7:checked ~ .cards #quadro-2,
+#item-8:checked ~ .cards #quadro-3{
+    transform: translatex(80%) scale(0.8);
+    opacity: 0.4;
+    z-index: 0;
+
+}
+
+#item-1:checked ~ .cards #quadro-5,
+#item-2:checked ~ .cards #quadro-6,
+#item-3:checked ~ .cards #quadro-7,
+#item-4:checked ~ .cards #quadro-8,
+#item-5:checked ~ .cards #quadro-1,
+#item-6:checked ~ .cards #quadro-2,
+#item-7:checked ~ .cards #quadro-3,
+#item-8:checked ~ .cards #quadro-4{
+    transform: translatex(-80%) scale(0.8);
+    opacity: 0.4;
+    z-index: 0;
+ 
+}
+
+
+/* ----------------------------------------------------------- */
+
+
+
+
+#item-1:checked ~ .cards #quadro-1 img,
+#item-2:checked ~ .cards #quadro-2 img,
+#item-3:checked ~ .cards #quadro-3 img,
+#item-4:checked ~ .cards #quadro-4 img,
+#item-5:checked ~ .cards #quadro-5 img,
+#item-6:checked ~ .cards #quadro-6 img,
+#item-7:checked ~ .cards #quadro-7 img,
+#item-8:checked ~ .cards #quadro-8 img{
+    box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
+}
+
+
+@media screen and (max-width:1070px) {
+    .cards{
+        width: 60vw;
+        height: 50vh;
+    }
+}

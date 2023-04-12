@@ -10,6 +10,10 @@
     
 }
 
+:any-link{
+    text-decoration: none;
+    cursor: pointer;
+}
 
 
 /* -------CORES--------- */
@@ -62,8 +66,6 @@ body{
 }
 
 .boas_vindas{
-    /* height: 80vh;
-    width: 80vw; */
     height: 100vh;
     width: 100vw;
 }
@@ -83,7 +85,7 @@ body{
     justify-content: center;
     z-index: 2;
     color: #FFFBF3;
-    /* border-radius: 2rem 0rem 0rem 2rem; */
+
 }
 
 
@@ -96,7 +98,7 @@ body{
 .boas_vindas h1{
     margin-top: 12px;
     font-family: var(--play);
-    font-size: 40px;
+    font-size: 3vw;
 
 }
 
@@ -106,7 +108,7 @@ body{
     font-family: var(--gruppo);
     color: #FFFBF3;
     margin-top: 40px; 
-    font-size: 18px;
+    font-size: 1.6vw;
     margin: 20px 0px 20px 0px;
     transition: 0.3s ease-in;
 }
@@ -121,21 +123,17 @@ body{
 .social ul{
     display: flex;
     flex-direction: row;
-    gap: 15px;
+    gap: 10px;
 }
 
 .social ul li{
-    width: 40px;
-    height:40px;
     border-radius: 1rem;
-    
-    
 }
 
 .social ul li img{
     filter: invert(1);
-    width: 35px;
-    height: 35px;
+    width: 5vw;
+    height: 5vh;
 }
 
 
@@ -207,20 +205,40 @@ body{
 }
 
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:800px) {
     .boas_vindas{
         backdrop-filter: blur(2px) saturate(180%);
         -webkit-backdrop-filter: blur(2px) saturate(180%);
         background-color: rgba(10, 13, 20, 0.75);
     }
 
+    .boas_vindas h1{
+        margin-top: 12px;
+        font-family: var(--play);
+        font-size: 5vh;
+    
+    }
+
+    
     .boas_vindas h2{
         display: block;
         font-family: var(--italiano);
         font-size: 15vw;
         
     }
+
+
+    .boas_vindas .button{
+        font-size: 1.9vh;
+        
+    }
     
+
+    .social ul li img{
+        width: 35px;
+        height: 35px;
+    }
+   
     .box{
         position: absolute; 
         
