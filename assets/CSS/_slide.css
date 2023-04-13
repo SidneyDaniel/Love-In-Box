@@ -102,7 +102,7 @@ input[type=radio]{
 }
 
 .cards label .descricao a:hover{
-    text-transform: lowercase;
+    text-transform: uppercase;
 }
 
 
