@@ -6,7 +6,7 @@
 *{
     box-sizing: border-box;
     margin: 0;
-    
+    scroll-behavior: smooth;
     
 }
 
@@ -44,6 +44,22 @@
     --robotoFlex: 'Roboto Flex', sans-serif;
     --Xanh: 'Xanh Mono', monospace;
 }
+
+body::-webkit-scrollbar{
+    width: 6px;
+}
+
+body::-webkit-scrollbar-track{
+    background: #242424;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: rgb(247, 247, 247);
+    border-radius: 20px;
+    transition: 0.5s ease;
+    
+}
+
 
 body{
     /* background: #e97eb0be; */

@@ -85,17 +85,18 @@ input[type=radio]{
     flex-direction: column;
     z-index: 1;
     padding: 2rem;
-    color: #000000;
-    text-shadow: 2px 2px #fff;
-    bottom: 30%;
+    color: #ffffff;
+    text-shadow: 2px 2px #000000;
+    bottom: 1%;
     font-family: var(--robotoFlex);
+    filter: drop-shadow(2px 4px 6px #000);
 }
 
 
 .cards label .descricao a, 
 .material-symbols-outlined.setaTexto{
     pointer-events: all;
-    color: #000000;
+    color: #ffffff;
     font-size: 2vw;
     transition: 0.1s ease-in-out;
     display: flex;
@@ -112,34 +113,38 @@ input[type=radio]{
 
 
 
-#item-1:checked ~ .cards #quadro-4,
-#item-2:checked ~ .cards #quadro-5,
-#item-3:checked ~ .cards #quadro-6,
-#item-4:checked ~ .cards #quadro-7,
-#item-5:checked ~ .cards #quadro-8,
-#item-6:checked ~ .cards #quadro-1,
-#item-7:checked ~ .cards #quadro-2,
-#item-8:checked ~ .cards #quadro-3{
+#item-1:checked ~ .cards #quadro-2,
+#item-2:checked ~ .cards #quadro-3,
+#item-3:checked ~ .cards #quadro-4,
+#item-4:checked ~ .cards #quadro-5,
+#item-5:checked ~ .cards #quadro-6,
+#item-6:checked ~ .cards #quadro-7,
+#item-7:checked ~ .cards #quadro-8,
+#item-8:checked ~ .cards #quadro-1{
+    transform: translatex(80%) scale(0.8);
+    opacity: 0.4;
+    z-index: 0;
+  
+}
+
+#item-1:checked ~ .cards #quadro-8,
+#item-2:checked ~ .cards #quadro-1,
+#item-3:checked ~ .cards #quadro-2,
+#item-4:checked ~ .cards #quadro-3,
+#item-5:checked ~ .cards #quadro-4,
+#item-6:checked ~ .cards #quadro-5,
+#item-7:checked ~ .cards #quadro-6,
+#item-8:checked ~ .cards #quadro-7{
     transform: translatex(-80%) scale(0.8);
     opacity: 0.4;
     z-index: 0;
     
 }
 
-#item-1:checked ~ .cards #quadro-5,
-#item-2:checked ~ .cards #quadro-6,
-#item-3:checked ~ .cards #quadro-7,
-#item-4:checked ~ .cards #quadro-8,
-#item-5:checked ~ .cards #quadro-1,
-#item-6:checked ~ .cards #quadro-2,
-#item-7:checked ~ .cards #quadro-3,
-#item-8:checked ~ .cards #quadro-4{
-    transform: translatex(80%) scale(0.8);
-    opacity: 0.4;
-    z-index: 0;
 
-}
 /* -------------------------------------------------------------- */
+
+
 
 
 #item-1:checked ~ .cards #quadro-1,
@@ -153,43 +158,9 @@ input[type=radio]{
     transform: translatex(0) scale(1);
     opacity: 1;
     z-index: 2;
+    transition: all 0s;
 
 }
-
-/* ----------------------------------------------------------- */
-
-#item-1:checked ~ .cards #quadro-4,
-#item-2:checked ~ .cards #quadro-5,
-#item-3:checked ~ .cards #quadro-6,
-#item-4:checked ~ .cards #quadro-7,
-#item-5:checked ~ .cards #quadro-8,
-#item-6:checked ~ .cards #quadro-1,
-#item-7:checked ~ .cards #quadro-2,
-#item-8:checked ~ .cards #quadro-3{
-    transform: translatex(80%) scale(0.8);
-    opacity: 0.4;
-    z-index: 0;
-
-}
-
-#item-1:checked ~ .cards #quadro-5,
-#item-2:checked ~ .cards #quadro-6,
-#item-3:checked ~ .cards #quadro-7,
-#item-4:checked ~ .cards #quadro-8,
-#item-5:checked ~ .cards #quadro-1,
-#item-6:checked ~ .cards #quadro-2,
-#item-7:checked ~ .cards #quadro-3,
-#item-8:checked ~ .cards #quadro-4{
-    transform: translatex(-80%) scale(0.8);
-    opacity: 0.4;
-    z-index: 0;
- 
-}
-
-
-/* ----------------------------------------------------------- */
-
-
 
 
 #item-1:checked ~ .cards #quadro-1 img,
@@ -202,6 +173,8 @@ input[type=radio]{
 #item-8:checked ~ .cards #quadro-8 img{
     box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
 }
+
+
 
 
 @media screen and (max-width:1070px) {

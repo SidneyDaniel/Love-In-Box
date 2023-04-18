@@ -53,9 +53,34 @@
     transform: perspective(3000px) rotateY(-5deg);
   }
 
+.lista_polaroids .polaroid {
+    /* aqui ó */
+    /* no preto lighten */
+    mix-blend-mode: overlay; 
+    background-size: cover;
+    height: 60vh;
+    /* ATENÇÃO, QUALQUER ERRO NO POLAROID OLHA ISSO  */
+}
+
+.lista_polaroids .polaroid:nth-child(1){
+    background: url(/assets/imgs/1.png) no-repeat;
+}
+
+.lista_polaroids .polaroid:nth-child(2){
+    background: url(/assets/imgs/2.png) no-repeat;
+}
+
+.lista_polaroids .polaroid:nth-child(3){
+    background: url(/assets/imgs/3.png) no-repeat;
+}
+
+
 .lista_polaroids .polaroid img{
+    /* mix-blend-mode: overlay; */
+    mix-blend-mode: screen;
     width: 30vw;
-    height: 30vh;
+    height: 60vh;
+
 }
 
 .texto_polaroids{
