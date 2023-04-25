@@ -1,10 +1,8 @@
 main{
     display: flex;
     flex-direction: row;
-    background:  linear-gradient( to right,
-    rgb(0, 0, 0),
-    rgb(0 0 0 / 0)
-    ),url(https://fastly.picsum.photos/id/681/5000/2951.jpg?hmac=01BxiMvFITUx4h3xM_x0IUp2w5KyQHzUd1AVxm8FKG0) no-repeat;
+    background: rgb(12,14,34);
+    background: linear-gradient(217deg, rgba(12,14,34,1) 0%, rgba(10,232,138,1) 49%, rgba(66,171,177,1) 100%);
     background-size: cover;
 }
 

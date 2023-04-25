@@ -13,6 +13,7 @@ input[type=radio]{
 
 .card{
     position: absolute;
+    /* try aspect-ratio */
     width: 60%;
     height: 100%;
     left: 0;
@@ -98,12 +99,12 @@ input[type=radio]{
     pointer-events: all;
     color: #ffffff;
     font-size: 2vw;
-    transition: 0.1s ease-in-out;
+    transition: 0.2s ease-in-out;
     display: flex;
 }
 
 .cards label .descricao a:hover{
-    text-transform: uppercase;
+    font-weight: bold;
 }
 
 
