@@ -57,6 +57,9 @@ main{
 }
 
 .slider-produto{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 0.5rem;
     position: relative;
     max-width: 48rem;
     margin: 0 auto;
@@ -66,9 +69,10 @@ main{
    display: flex;
    width: 28vw;
    height: 74vh;
-   overflow-x: auto; 
+   overflow-x: hidden; 
    scroll-snap-type: x mandatory;
    scroll-behavior: smooth;
+   -webkit-overflow-scrolling: touch;
    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
    border-radius: 0.5rem;
    
@@ -83,23 +87,54 @@ main{
 
 .slider-nav{
     display: flex;
-    column-gap: 1rem;
-    position: absolute;
-    bottom: 1.25rem;
-    left: 50%;
+    flex-direction: column;
+    overflow: auto;
+    overflow-x: hidden;
+    height: 74vh;
+    /* position: absolute; */
+    /* bottom: 1.25rem; */
+    /* left: 50%; */
     transform: translateX(-50%);
     z-index: 1;
 }
 
+.slider-nav::-webkit-scrollbar{
+    width: 3px;
+}
+
+.slider-nav::-webkit-scrollbar-track{
+    background: #24242400;
+}
+
+.slider-nav::-webkit-scrollbar-thumb{
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    transition: 0.5s ease;
+    
+}
+
+.slider-nav::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(255, 255, 255);
+}
+
 .slider-nav a{
-    width: 0.5rem;
-    height: 0.5rem;
-    border-radius: 50%;
-    background-color: #fff;
+    /* width: 0.7rem;
+    height: 0.7rem; */
     opacity: 0.75;
     transition: opacity ease 250ms;
-    border: 1px solid #000;
+    transition: 250ms;
 }
+
+.slider-nav a img{
+    width: 73px;
+    height: 98px;
+}
+
+.slider-nav a:hover{
+   scale: 1.1;
+}
+
+
 
 .slider-nav a:hover{
    opacity: 1; 
