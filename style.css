@@ -61,6 +61,19 @@ body::-webkit-scrollbar-thumb{
 }
 
 
+/* ANIMAÇÃO ESMAECER */
+.fade {
+    animation-name: fade;
+    animation-duration: 7s;
+}
+
+@keyframes fade {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+
+
 body{
     /* background: #e97eb0be; */
     background: #000;
