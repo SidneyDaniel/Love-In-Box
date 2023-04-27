@@ -139,3 +139,37 @@ main{
 .slider-nav a:hover{
    opacity: 1; 
 }
+
+/* 
+@media screen and (max-width:1000px) {
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+    .informacao, 
+    .produto{
+        width: 100vw;
+        height: 80vh;
+    }
+
+    .informacao{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+       
+}
+
+
+@media screen and (min-width:1000px) and (max-width:1320px) {
+    .slider-imgs{
+        width: 28vw;
+        height: 65vh;
+     }
+
+     .slider-nav{
+        height: 65vh;
+    }
+} */

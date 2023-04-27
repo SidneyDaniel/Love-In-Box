@@ -99,3 +99,46 @@
     font-size: 1.5vw;
     text-align: justify;
 }
+
+
+@media screen and (max-width:600px){
+    .lista_polaroids .polaroid.um,
+    .lista_polaroids .polaroid.tres{
+        display: none;
+        
+    }
+
+    .lista_polaroids .polaroid img {
+        width: 85vw;
+        height: 60vh;
+    }
+
+    .lista_polaroids .polaroid { 
+        height: 60vh;
+    }
+}
+
+
+
+@media screen and (min-width:600px) and (max-width:700px){
+    .lista_polaroids .polaroid img {
+        width: 30vw;
+        height: 30vh;
+    }
+    
+    .lista_polaroids .polaroid { 
+        height: 30vh;
+    }
+}
+
+
+@media screen and (min-width:700px) and (max-width:1000px) {
+    .lista_polaroids .polaroid img {
+        width: 30vw;
+        height: 40vh;
+    }
+    
+    .lista_polaroids .polaroid { 
+        height: 40vh;
+    }
+}
