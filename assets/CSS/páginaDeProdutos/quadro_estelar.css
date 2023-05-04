@@ -63,8 +63,10 @@ main{
 } */
 
 .produto img{
-    width: 400px;
-    height: 600px;
+    width: 20vw;
+    height: 60vh;
+    min-width: 300px;
+    max-width: 300px;
     opacity: 0.8;
     transform: perspective(1500px) rotateY(15deg);
     transition: transform 1s ease 0s;
@@ -85,3 +87,119 @@ main{
 .produto img:nth-child(2):hover{
     transform: perspective(3000px) rotateY(-5deg);
 }
+
+
+@media screen and (max-width:1245px) {
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .informacao{
+        height: 10vh;
+        margin-top: 7rem;
+    }
+
+    .informacao h1{
+        font-size: 10.6vw; 
+    }
+    
+    .informacao p{
+        font-size: 5.5vw;
+        text-align: center;
+    }
+    
+    .informacao .preco{
+        margin-top: 2rem;
+        font-size: 8vw;
+    }
+}
+
+@media screen and (max-width:870px) {
+    .produto img:nth-child(2){
+        display: none;
+    }
+  
+}
+
+@media  screen and (min-width:200px) and  (max-width: 440px) {
+    .produto img{
+        width: 20vw;
+        height: 64vh;
+        min-width: 300px;
+        max-width: 300px;
+        transform: none;
+    }
+}
+
+
+@media screen and (min-width:440px) and (max-width: 870px) {
+      
+    .informacao, 
+    .produto{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .informacao{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .produto img{
+        width: 20vw;
+        height: 80vh;
+        min-width: 400px;
+        max-width: 400px;
+        transform: none;
+    }
+  
+
+  
+
+}
+
+
+
+@media screen and (min-width:870px) and (max-width:1245px) {
+   
+    .informacao, 
+    .produto{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .informacao{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .produto img{
+        width: 20vw;
+        height: 70vh;
+        min-width: 400px;
+        max-width: 400px;
+       
+    }
+   
+}
+
+
+/* @media screen and (min-width:1000px) and (max-width:1320px) {
+    .slider-imgs{
+        width: 28vw;
+        height: 65vh;
+     }
+
+     .slider-nav{
+        height: 65vh;
+    }
+
+    .produto img{
+        width: calc(400px / 2);
+        height:calc(600px / 2);
+    }
+} */

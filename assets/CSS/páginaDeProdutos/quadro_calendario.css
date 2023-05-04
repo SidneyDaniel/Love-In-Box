@@ -192,3 +192,76 @@ main{
    font-family: 'Courier New', Courier, monospace;
    text-shadow: 1px 1px 1px #000;
 }
+
+@media screen and (max-width: 650px) {
+    .informacao .quadro img{
+        display: none;
+     }
+     
+     .informacao{
+        gap: 0rem;
+        padding: 0rem;
+        height: 10vh;
+        margin-top: 8rem;
+    
+    }
+
+     
+    .informacao h1 {
+        font-family: var(--gruppo);
+        font-size: 10.6vw;
+        text-align: center;
+    }
+    
+    .informacao p {
+        font-size: 5vw;
+        font-family: var(--gruppo);
+    }
+
+    .informacao .preco{
+        margin-top: 2rem;
+        font-size: 6vw;
+    }
+}
+
+
+@media screen and (min-width:300px) and  (max-width:460px) {
+    .produto .calendario{
+        position: relative;
+        width: 80vw;
+        min-width: 340px;
+        max-width: 340px;
+        height: 28vh;
+        margin-bottom: 9rem;
+    }
+}
+
+@media screen and (min-width:460px) and  (max-width:650px) {
+    .produto .calendario{
+        position: relative;
+        width: 70vw;
+        min-width: 420px;
+        max-width: 420px;
+        height: 35vh;
+        margin-bottom: 9rem;
+    }
+}
+
+
+@media screen and (min-width:650px) and (max-width:900px) {
+    .produto .calendario{
+        position: relative;
+        width: 95vw;
+        min-width: 620px;
+        max-width: 620px;
+        height: 50vh;
+        margin-bottom: 9rem;
+    }
+}
+
+@media screen and (max-width:1320px) {
+    .informacao .quadro img{
+        width: 300px;
+        height: 500px;
+    }
+}
