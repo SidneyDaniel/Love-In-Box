@@ -116,6 +116,11 @@
     .lista_polaroids .polaroid { 
         height: 60vh;
     }
+
+    .texto_polaroids p {
+        font-size: 4.5vw;
+        text-align: center;
+    }
 }
 
 
