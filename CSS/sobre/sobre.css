@@ -81,15 +81,15 @@ section.module.parallax::after{
 
 
 section.module.parallax-1{
-    background-image: url(/assets/imgs/backgrounds/erikaDaniel/1.svg);
+    background-image: url(/./assets/imgs/backgrounds/erikaDaniel/1.svg);
 }
 
 section.module.parallax-2{
-    background-image: url(/assets/imgs/backgrounds/slideBackground/18.png);
+    background-image: url(/./assets/imgs/backgrounds/slideBackground/18.png);
 }
 
 section.module.parallax-3{
-    background-image: url(/assets/imgs/backgrounds/slideBackground/20.png);
+    background-image: url(/./assets/imgs/backgrounds/slideBackground/20.png);
 }
 
 section.module.parallax h1{
