@@ -5,7 +5,7 @@ main{
     background:  linear-gradient( to right,
     rgb(0, 0, 0),
     #00000000
-    ),url(/./assets/imgs/img_quadros/caléndario.png) no-repeat;
+    ),url(../assets/imgs/img_quadros/caléndario.png) no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -85,7 +85,7 @@ main{
 
 .calendario .content{
     position: absolute;
-    background: url(/assets/imgs/img_quadros/caléndario.png) no-repeat;
+    background: url(../assets/imgs/img_quadros/caléndario.png) no-repeat;
     background-position: center;
     background-size: cover;
     inset: 0;

@@ -87,7 +87,7 @@
 
 .box{
     object-fit: cover;
-    background: url(/./assets/imgs/4.png) no-repeat;
+    background: url(../assets/imgs/4.png) no-repeat;
     z-index: 1;
     animation: slide 20s infinite alternate;
     background-size: cover;
@@ -127,19 +127,19 @@
     }
     
     20%{
-        background: url(/./assets/imgs/background.png);
+        background: url(../assets/imgs/background.png);
         background-size: cover;
         background-position: center;
     }
 
     40%{
-        background: url(/./assets/imgs/produtos/imagem\ 1\ \(1\).jpg);
+        background: url(../assets/imgs/produtos/imagem\ 1\ \(1\).jpg);
         background-size: cover;
         background-position: center;
     }
 
     60%{
-        background: url(/./assets/imgs/produtos/imagem\ 1\ \(2\).jpg);  
+        background: url(../assets/imgs/produtos/imagem\ 1\ \(2\).jpg);  
         background-size: cover;
         background-position: center;
     }

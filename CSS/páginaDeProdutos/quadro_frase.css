@@ -1,7 +1,7 @@
 main{
     display: flex;
     flex-direction: row;
-    background:url(/./assets/imgs/backgrounds/frases.png) no-repeat;
+    background:url(../assets/imgs/backgrounds/frases.png) no-repeat;
     background-size: cover;
 }
 
