@@ -120,7 +120,7 @@ main{
         background:linear-gradient( to bottom,
         rgb(0, 0, 0),
         rgb(0 0 0 / 0)
-        ), url(../assets/imgs/img_quadros/quadros_spotify/spotify_black.png) no-repeat;
+        ), url(https://github.com/SidneyDaniel/Love-In-Box/blob/main/assets/imgs/img_quadros/quadros_spotify/spotify_black.png?raw=true) no-repeat;
         background-attachment: fixed;
         background-size: cover;
     }

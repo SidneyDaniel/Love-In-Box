@@ -54,8 +54,6 @@
   }
 
 .lista_polaroids .polaroid {
-    /* aqui ó */
-    /* no preto lighten */
     mix-blend-mode: overlay; 
     background-size: cover;
     height: 60vh;
@@ -63,20 +61,19 @@
 }
 
 .lista_polaroids .polaroid:nth-child(1){
-    background: url(/assets/imgs/1.png) no-repeat;
+    background: url(https://github.com/SidneyDaniel/Love-In-Box/blob/main/assets/imgs/backgrounds/slideBackground/19.png?raw=true) no-repeat;
 }
 
 .lista_polaroids .polaroid:nth-child(2){
-    background: url(/assets/imgs/2.png) no-repeat;
+    background: url(https://github.com/SidneyDaniel/Love-In-Box/blob/main/assets/imgs/backgrounds/1.png?raw=true) no-repeat;
 }
 
 .lista_polaroids .polaroid:nth-child(3){
-    background: url(/assets/imgs/3.png) no-repeat;
+    background: url(https://github.com/SidneyDaniel/Love-In-Box/blob/main/assets/imgs/backgrounds/2.png?raw=true) no-repeat;
 }
 
 
 .lista_polaroids .polaroid img{
-    /* mix-blend-mode: overlay; */
     mix-blend-mode: screen;
     width: 30vw;
     height: 60vh;

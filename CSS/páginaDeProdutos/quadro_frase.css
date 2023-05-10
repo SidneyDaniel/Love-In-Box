@@ -1,7 +1,7 @@
 main{
     display: flex;
     flex-direction: row;
-    background:url(../assets/imgs/backgrounds/frases.png) no-repeat;
+    background:url(https://github.com/SidneyDaniel/Love-In-Box/blob/main/assets/imgs/backgrounds/frases.png?raw=true) no-repeat;
     background-size: cover;
 }
 
