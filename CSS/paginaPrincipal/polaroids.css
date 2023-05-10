@@ -63,15 +63,15 @@
 }
 
 .lista_polaroids .polaroid:nth-child(1){
-    background: url(../assets/imgs/1.png) no-repeat;
+    background: url(/assets/imgs/1.png) no-repeat;
 }
 
 .lista_polaroids .polaroid:nth-child(2){
-    background: url(../assets/imgs/2.png) no-repeat;
+    background: url(/assets/imgs/2.png) no-repeat;
 }
 
 .lista_polaroids .polaroid:nth-child(3){
-    background: url(../assets/imgs/3.png) no-repeat;
+    background: url(/assets/imgs/3.png) no-repeat;
 }
 
 
